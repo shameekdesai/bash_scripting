@@ -1,12 +1,15 @@
 #! /usr/bin/bash
-INDEX=0
-while [ $INDEX -lt 100 ]
-do
-  REMAINDER=$(( $INDEX % 2 ))
-  
-  if [ $REMAINDER -ne 0 ]
-  then
-    echo $INDEX
-  fi
-  INDEX=$(($INDEX+1))
-done
+read X;
+read Y;
+if [ $X -gt $Y ];
+	then
+		echo "X is greater than Y";
+fi;
+if [ $X -eq $Y ];
+	then
+		echo "X is equal to Y";
+fi;
+if [ $X -lt $Y ];
+	then
+		echo "X is less than Y";
+fi;
