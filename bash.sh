@@ -1,9 +1,12 @@
 #! /usr/bin/bash
-count=10  #no space for equal to operator 
-
-if [ $count -ne 9 ] # space at the brackets, ne = not equal  
-then
-	echo " the condition is true "
-else
-	echo " the condition is false "
-fi
+INDEX=0
+while [ $INDEX -lt 100 ]
+do
+  REMAINDER=$(( $INDEX % 2 ))
+  
+  if [ $REMAINDER -ne 0 ]
+  then
+    echo $INDEX
+  fi
+  INDEX=$(($INDEX+1))
+done
