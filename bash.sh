@@ -1,15 +1,9 @@
 #! /usr/bin/bash
-read X;
-read Y;
-if [ $X -gt $Y ];
-	then
-		echo "X is greater than Y";
-fi;
-if [ $X -eq $Y ];
-	then
-		echo "X is equal to Y";
-fi;
-if [ $X -lt $Y ];
-	then
-		echo "X is less than Y";
+read VAR1;
+if [[ $VAR1 == y ]] || [[ $VAR1 == Y ]]
+then
+  echo "YES"
+elif [[ $VAR1 == n ]] || [[ $VAR1 == N ]]
+then
+	echo "NO"
 fi;
